@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+        .rig {
+
+            text-align: center;
+            background-color: tomato;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            border-radius: 10px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="rig">
+        <h3>Rigistration Form</h3>
+
+        <label for="text">Uesr Name</label>
+        <input type="text" id="name1" >
+
+        <BR></BR>
+
+        <label for="password"> Password</label>
+        <input type="password" name="" id="pass1" >
+
+        <BR></BR>
+        <label for="Mobile Number"> Mobile Number</label>
+        <input type="text" name="" id="num1" >
+
+        <BR></BR>
+
+
+
+        <label for="date">date of birth</label>
+        <input type="date" name="" id="date1" >
+
+        <BR></BR>
+
+        <label>Gender</label>
+
+    <input type="radio" name="gender" value="male" />Male
+    <input type="radio" name="gender" value="female"/>Female
+
+
+
+        <BR></BR>
+
+        <input type="submit" value="SignUP" onclick="submit()">
+
+    </div>
+    <script>
+        function submit() {
+            var name = document.getElementById("name1")
+            var Password = document.getElementById("pass1")
+            var MobileNumber = document.getElementById("num1")
+            var date = document.getElementById("date1")   
+            var gender = document.getElementsByName("gender")
+            
+
+
+            console.log(name.value);
+            console.log(Password.value);
+            console.log(MobileNumber.value)
+            console.log(date.value);
+            for(var i=0;i<gender.length;i++){
+                if(gender[i].checked){
+                    console.log(gender[i].value)
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

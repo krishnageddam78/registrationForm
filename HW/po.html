@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationForm</title>
+    <style>
+        .rig {
+
+            text-align: center;
+            background-color: tomato;
+            margin-left: 300px;
+            margin-right: 300px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            border-radius: 10px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="rig">
+        <h3>Rigistration Form</h3>
+
+        <label for="text">Uesr Name</label>
+        <input type="text" id="name1" value="">
+        <BR></BR>
+
+        <label for="password"> Password</label>
+        <input type="password" name="" id="pass1" value="">
+
+        <BR></BR>
+        <input type="radio" name="" id="mail" value="">
+        <label for="radio"> mail</label>
+        
+
+        <BR></BR>
+        <input type="radio" name="" id="femail" value="">
+        <label for="radio"> femail</label>
+        
+
+
+        <BR></BR>
+
+        <input type="submit" value="SignUP" onclick="submit()">
+
+    </div>
+    <script>
+        function submit() {
+            var name = document.getElementById("name1")
+            var Password = document.getElementById("pass1")      
+            var mail = document.getElementById("mail")
+            var femail = document.getElementById("femail")
+            
+
+
+            console.log(name.value);
+            console.log(Password.value);
+            console.log(mail.value);
+            console.log(femail.value);
+        }
+
+    </script>
+
+</body>
+
+</html>

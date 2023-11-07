@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+</head>
+<body>
+    <h2>Marks</h2>
+    <script>
+        var marks = {
+            telugu:98,
+            english:90,
+            hindi:85,
+            mathematics:95,
+            science:95,
+            social:90,
+            total:function sum(){
+                console.log(marks.telugu+marks.english+marks.hindi+marks.mathematics+marks.science+marks.social)
+            },
+           percentage:function(){
+            return  sum()*(100/600)
+           }
+               
+    }
+    marks.total()
+    marks.percentage() 
+    
+    </script>
+    
+</body>
+</html>
